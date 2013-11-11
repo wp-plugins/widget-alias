@@ -46,7 +46,8 @@ Banner photo by [Susannah Kay](http://susannahkay.com).
 Install and activate the plugin. That's it! You'll now have access to the Widget Alias widget via *Appearance > Widgets*, as well as the `[wa]` shortcode.
 
 == Screenshots ==
-1. Widget Alias Features
+1. Widget Alias features
+2. Widget Alias sample output
 
 == Changelog ==
 
