@@ -17,6 +17,7 @@ A [**MIGHTYminnow**](http://mightyminnow.com) plugin.
 
 = Features =
 This plugin is similar to [Duplicate Widget](http://wordpress.org/plugins/duplicate-widget), with a few key differences:  
+
 * Widget Alias gives you the option to override the aliased widget's title.
 * Widget Alias uses AJAX to update the drop-down `<select>` menus on the fly, which means you see widget changes (adding widgets, deleting widgets, re-ordering widgets, etc) in real time.
 * If you delete a widget that is being aliased, the aliased copies simply revert to "None", instead of being deleted. This allows you to keep track of where you've used Widget Alias widgets, if need be.
