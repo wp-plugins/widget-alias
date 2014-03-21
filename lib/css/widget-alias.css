@@ -5,9 +5,10 @@
 }
 
 .wa-info {
-	padding-top: 10px;
+	padding: 5px 15px;
 	font-size: .9em;
-	font-style: italic;
+	text-align: right;
+	border: none;
 }
 
 .alias-count {
@@ -18,4 +19,3 @@
 .wa-highlight {
 	box-shadow: 0 0 10px black;
 }
-
