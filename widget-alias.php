@@ -3,7 +3,7 @@
  * Plugin Name: Widget Alias
  * Plugin URI:  http://mightyminnow.com
  * Description: Creates an alias widget so you only have to edit once.
- * Version:     1.2
+ * Version:     1.3
  * Author:      MIGHTYminnow
  * Author URI:  http://mightyminnow.com
  * License:     GPLv2+
@@ -335,7 +335,10 @@ class WidgetAlias extends WP_Widget {
                 'title' => $title,
             );
 
-            $this->widget( '', $instance ); 
+            // Capture and return widget output
+            ob_start();
+            $this->widget( '', $instance );
+            return ob_get_clean();
         }
 
     }

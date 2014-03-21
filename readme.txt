@@ -4,7 +4,7 @@ Donate link:       http://mightyminnow.com
 Tags:              duplicate, widget, alias, reproduce, synchronize, mimic, sidebar, widgets, shortcode, specific, multiple
 Requires at least: 3.0
 Tested up to:      3.8.1
-Stable tag:        1.2
+Stable tag:        1.3
 License:           GPLv2 or later
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -50,6 +50,9 @@ Install and activate the plugin. That's it! You'll now have access to the Widget
 
 == Changelog ==
 
+= 1.3 =
+* Fixed bug in which Widget Alias was simply echoing widget output, instead of returning it in the correct location.
+
 = 1.2 =
 * Further modifications to JS and CSS to utilize default WP admin classes for improved aesthetics.
 
@@ -60,6 +63,9 @@ Install and activate the plugin. That's it! You'll now have access to the Widget
 * First release
 
 == Upgrade Notice ==
+
+= 1.3 =
+* Fixed bug in which Widget Alias was simply echoing widget output, instead of returning it in the correct location.
 
 = 1.2 =
 * Further modifications to JS and CSS to utilize default WP admin classes for improved aesthetics.
