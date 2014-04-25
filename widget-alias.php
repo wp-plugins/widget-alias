@@ -3,7 +3,7 @@
  * Plugin Name: Widget Alias
  * Plugin URI:  http://mightyminnow.com
  * Description: Creates an alias widget so you only have to edit once.
- * Version:     1.0
+ * Version:     1.4
  * Author:      MIGHTYminnow
  * Author URI:  http://mightyminnow.com
  * License:     GPLv2+
@@ -25,6 +25,7 @@ if ( !function_exists( 'add_action' ) ) {
 
 // Definitions
 define( 'WA_PLUGIN_NAME', 'Widget Alias' );
+define( 'WA_PLUGIN_VERSION', '1.4' );
 
 
 /**
@@ -33,7 +34,7 @@ define( 'WA_PLUGIN_NAME', 'Widget Alias' );
 function enqueue_admin_scripts() {
 
     wp_enqueue_style( 'widget-alias-css', plugin_dir_url( __FILE__ ) . 'lib/css/widget-alias.css' );
-    wp_enqueue_script( 'widget-alias-jquery', plugin_dir_url( __FILE__ ) . 'lib/js/widget-alias.js' );
+    wp_enqueue_script( 'widget-alias-jquery', plugin_dir_url( __FILE__ ) . 'lib/js/widget-alias.js', array('jquery'), WA_PLUGIN_VERSION, true );
 
     // Load plugin text domain
     load_plugin_textdomain( 'widget-alias', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
@@ -92,12 +93,6 @@ class WidgetAlias extends WP_Widget {
         // Add shortcode to output specific widget [wa title="title"]
         add_shortcode( 'wa', array( $this, 'wa_shortcode' ) );
 
-        // Why is this here???
-        add_action( 'widget_form_callback', function( $instance ) {
-            $this->update_callback();
-            return $instance;
-        });
-
     }
     
     /**
@@ -140,7 +135,7 @@ class WidgetAlias extends WP_Widget {
 
             // Output <option> for each widget in sidebar (excluding this widget to avoid recursion)
             foreach( $widgets as $widget ) {
-                if ( $this->id != $widget && !strstr( $widget, 'widget-alias' ) )
+                if ( $this->id != $widget )
                     $widgets_output .= "\t" . '<option value="'. $widget . '"' . selected( !empty( $instance['alias-widget-id'] ) ? $instance['alias-widget-id'] : '', $widget, __return_false() ) . '>' . $widget . '</option>' . "\n";
             }
 
@@ -335,7 +330,10 @@ class WidgetAlias extends WP_Widget {
                 'title' => $title,
             );
 
-            $this->widget( '', $instance ); 
+            // Capture and return widget output
+            ob_start();
+            $this->widget( '', $instance );
+            return ob_get_clean();
         }
 
     }

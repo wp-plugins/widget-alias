@@ -5,16 +5,20 @@
 }
 
 .wa-info {
+	padding: 5px 15px;
 	font-size: .9em;
-	padding: 5px 10px;
+	text-align: right;
+	border: none;
 }
 
 .alias-count {
-	padding: 5px 0;
+	margin: 1em 0 0.5em;
+	padding: 0.5em 0.75em;
 	font-weight: bold;
+	background-color: #FAFAFA;
+	border: 1px solid #EEE;
 }
 
 .wa-highlight {
 	box-shadow: 0 0 10px black;
 }
-
