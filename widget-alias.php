@@ -25,7 +25,7 @@ if ( !function_exists( 'add_action' ) ) {
 
 // Definitions
 define( 'WA_PLUGIN_NAME', 'Widget Alias' );
-define( 'WA_PLUGIN_VERSION', '1.4' );
+define( 'WA_PLUGIN_VERSION', '1.5' );
 
 
 /**
