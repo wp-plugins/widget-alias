@@ -4,7 +4,7 @@ Donate link:       http://mightyminnow.com
 Tags:              duplicate, widget, alias, reproduce, synchronize, mimic, sidebar, widgets, shortcode, specific, multiple
 Requires at least: 3.0
 Tested up to:      4.0
-Stable tag:        1.5
+Stable tag:        1.6
 License:           GPLv2 or later
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -50,6 +50,9 @@ Install and activate the plugin. That's it! You'll now have access to the Widget
 
 == Changelog ==
 
+= 1.6 =
+* Add missing .pot file.
+
 = 1.5 =
 * Add extra JS conditional to prevent AJAX errors.
 
@@ -71,6 +74,9 @@ Install and activate the plugin. That's it! You'll now have access to the Widget
 * First release
 
 == Upgrade Notice ==
+
+= 1.6 =
+* Add missing .pot file.
 
 = 1.5 =
 * Add extra JS conditional to prevent AJAX errors.

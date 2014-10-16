@@ -3,7 +3,7 @@
  * Plugin Name: Widget Alias
  * Plugin URI:  http://mightyminnow.com
  * Description: Creates an alias widget so you only have to edit once.
- * Version:     1.4
+ * Version:     1.6
  * Author:      MIGHTYminnow
  * Author URI:  http://mightyminnow.com
  * License:     GPLv2+
