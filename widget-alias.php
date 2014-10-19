@@ -140,7 +140,7 @@ class WidgetAlias extends WP_Widget {
             }
 
             // Add <optgroup> for each sidebar that has widgets
-            if ( !empty( $widgets_output ) )
+            if ( ! empty( $widgets_output ) && isset( $wp_registered_sidebars[ $sidebar ]['name'] ) )
                 $select .= "\t" . '<optgroup label="' . $wp_registered_sidebars[ $sidebar ]['name'] . '">' . "\n" . $widgets_output;
 
         }
