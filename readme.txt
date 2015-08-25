@@ -3,8 +3,8 @@ Contributors:      McGuive7, MIGHTYminnow
 Donate link:       http://mightyminnow.com
 Tags:              duplicate, widget, alias, reproduce, synchronize, mimic, sidebar, widgets, shortcode, specific, multiple
 Requires at least: 3.0
-Tested up to:      4.0
-Stable tag:        1.7
+Tested up to:      4.4
+Stable tag:        1.7.1
 License:           GPLv2 or later
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -50,6 +50,9 @@ Install and activate the plugin. That's it! You'll now have access to the Widget
 
 == Changelog ==
 
+= 1.7.1 =
+* Fix deprecated widget constructor call.
+
 = 1.7 =
 * Fix issue with shortcode method throwing error.
 
@@ -77,6 +80,9 @@ Install and activate the plugin. That's it! You'll now have access to the Widget
 * First release
 
 == Upgrade Notice ==
+
+= 1.7.1 =
+* Fix deprecated widget constructor call.
 
 = 1.7 =
 * Fix issue with shortcode method throwing error.

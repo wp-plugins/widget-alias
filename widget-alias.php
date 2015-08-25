@@ -3,7 +3,7 @@
  * Plugin Name: Widget Alias
  * Plugin URI:  http://mightyminnow.com
  * Description: Creates an alias widget so you only have to edit once.
- * Version:     1.7
+ * Version:     1.7.1
  * Author:      MIGHTYminnow
  * Author URI:  http://mightyminnow.com
  * License:     GPLv2+
@@ -87,7 +87,7 @@ class WidgetAlias extends WP_Widget {
         $widget_options = array(
             'classname' => 'widget-alias',
             'description' => __('An alias widget to reproduce the output of an existing widget.', 'widget-alias') );
-            parent::WP_Widget('widget-alias', __('Widget Alias', 'widget-alias'), $widget_options
+            parent::__construct('widget-alias', __('Widget Alias', 'widget-alias'), $widget_options
         );
 
         // Add shortcode to output specific widget [wa title="title"]
